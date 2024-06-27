@@ -84,9 +84,9 @@ jobs:
       - name: Custom Change
         uses: ServiceNow/servicenow-devops-change@v4.0.0
         with:
-          devops-integration-token: 'CD7TmJU7pXXN5H8ccajWkWGqRQoKVSZZ'
-          instance-url: 'https://avitokyo4.service-now.com'
-          tool-id: '8c983e80c33202102893772ce001314a'
+          devops-integration-token: 'JafcmZjMr15gdv1xIhtdQldQwWgjkYck'
+          instance-url: 'https://kingkong.service-now.com'
+          tool-id: '2b19b08447cbc21029b8834c326d4394'
           context-github: ${{ toJSON(github) }}
           job-name: 'Deploy'
           change-request: '{"setCloseCode":"true","attributes":{"short_description":"Automated Software Deployment","description":"Automated Software Deployment.","assignment_group":"a715cd759f2002002920bde8132e7018"}}'
@@ -109,7 +109,7 @@ jobs:
       - name: ServiceNow DevOps Get Change
         uses: avinash-kalange-sn/servicenow-devops-get-change@scratch/DEF0543091
         with:
-          devops-integration-token: 'RFAaWCXLMzFs9TIgrUfXcyhypEbGCjum'
+          devops-integration-token: 'JafcmZjMr15gdv1xIhtdQldQwWgjkYck'
           instance-url: 'https://sftokyo3.service-now.com'
           tool-id: 'f95bf73c9343ce504686fca86cba105c'
           context-github: ${{ toJSON(github) }}

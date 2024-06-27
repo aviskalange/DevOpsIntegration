@@ -84,9 +84,9 @@ jobs:
       - name: Custom Change
         uses: ServiceNow/servicenow-devops-change@v4.0.0
         with:
-          devops-integration-token: 'ierJgLhEoYTmyS2v5LmqKcV3HTNqXf5x'
-          instance-url: 'https://kingkong.service-now.com'
-          tool-id: '599774c047cbc21029b8834c326d432e'
+          devops-integration-token: 'CD7TmJU7pXXN5H8ccajWkWGqRQoKVSZZ'
+          instance-url: 'https://avitokyo4.service-now.com'
+          tool-id: '8c983e80c33202102893772ce001314a'
           context-github: ${{ toJSON(github) }}
           job-name: 'Deploy'
           change-request: '{"setCloseCode":"true","attributes":{"short_description":"Automated Software Deployment","description":"Automated Software Deployment.","assignment_group":"a715cd759f2002002920bde8132e7018"}}'

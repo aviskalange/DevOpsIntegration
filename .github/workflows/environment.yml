@@ -38,7 +38,7 @@ jobs:
     name: Deploy
     needs: build
     runs-on: ubuntu-latest
-    environment: deployment-gate
+    environment: deployment_gate
     steps:
       - run: echo hello
 

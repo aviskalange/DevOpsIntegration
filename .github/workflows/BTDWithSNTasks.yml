@@ -103,16 +103,16 @@ jobs:
     name: Post Deploy
     runs-on: ubuntu-latest
     steps:
-      # - name: Sleep
-      #   run: sleep 15
+      - name: Sleep
+        run: sleep 15
 
       - name: ServiceNow DevOps Get Change
-        uses: avinash-kalange-sn/servicenow-devops-get-change@scratch/DEF0543091
+        uses: ServiceNow/servicenow-devops-get-change@dev
         with:
           devops-integration-token: 'JafcmZjMr15gdv1xIhtdQldQwWgjkYck'
-          instance-url: 'https://sftokyo3.service-now.com'
-          tool-id: 'f95bf73c9343ce504686fca86cba105c'
+          instance-url: 'https://kingkong.service-now.com'
+          tool-id: '2b19b08447cbc21029b8834c326d4394'
           context-github: ${{ toJSON(github) }}
           # The inputs to identify change at Servicenow and GET it.
-          change-details: '{"build_number":"${{ github.run_id }}","pipeline_name":"aviskalange/DevOpsIntegration/GHARerunTest","stage_name":"Deploy","attempt_number":1}'
+          change-details: '{"build_number":"${{ github.run_id }}","pipeline_name":"aviskalange/DevOpsIntegration/GHARerunTest","stage_name":"Deploy"}'
           

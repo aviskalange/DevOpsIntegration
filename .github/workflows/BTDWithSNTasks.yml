@@ -114,5 +114,5 @@ jobs:
           tool-id: '2b19b08447cbc21029b8834c326d4394'
           context-github: ${{ toJSON(github) }}
           # The inputs to identify change at Servicenow and GET it.
-          change-details: '{"build_number":"${{ github.run_id }}","pipeline_name":"aviskalange/DevOpsIntegration/GHARerunTest","stage_name":"Deploy"}'
+          change-details: '{"build_number":"${{ github.run_id }}","pipeline_name":"aviskalange/DevOpsIntegration/GHARerunTest","stage_name":"Deploy","attempt_number":"1"}'
           

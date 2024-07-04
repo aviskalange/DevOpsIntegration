@@ -107,7 +107,7 @@ jobs:
         run: sleep 15
 
       - name: ServiceNow DevOps Get Change
-        uses: ServiceNow/servicenow-devops-get-change@dev
+        uses: aviskalange/servicenow-devops-get-change@dev
         with:
           devops-integration-token: '3tYpKMjjX96XtSstGhj7rvIcz4uFV38n'
           instance-url: 'https://akautah.service-now.com'

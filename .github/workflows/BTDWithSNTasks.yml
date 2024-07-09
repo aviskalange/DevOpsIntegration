@@ -107,7 +107,7 @@ jobs:
         run: sleep 15
 
       - name: ServiceNow DevOps Get Change
-        uses: aviskalange/servicenow-devops-get-change@dev
+        uses: ServiceNow/servicenow-devops-get-change@scratch/DEF0549958_1
         with:
           devops-integration-token: 'ierJgLhEoYTmyS2v5LmqKcV3HTNqXf5x'
           instance-url: 'https://kingkong.service-now.com'
